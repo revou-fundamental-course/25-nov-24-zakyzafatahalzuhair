@@ -7,47 +7,49 @@
     <link rel="stylesheet" href="/CSS/index.css">
 </head>
 <body> <!--isi-->
-    </div>
-    <div class="artikel"><!--penjelasan mengenai Kalkulator  BMI-->
-        <h1 style="align : center;">Kalkulator BMI</h1>
-        <p >Kalkulator BMI (Body Mass Index) atau kalkulator IMT (Indeks Massa Tubuh) adalah alat yang digunakan untuk menghitung berat badan ideal seseorang berdasarkan tinggi dan berat badan. Kalkulator BMI dapat digunakan secara online dan kapan saja.
+     <div class="backgroundbox">
+        <div class="artikel"><!--penjelasan mengenai Kalkulator  BMI-->
+            <h1>Kalkulator BMI</h1>
+            <p >Kalkulator BMI (Body Mass Index) atau kalkulator IMT (Indeks Massa Tubuh) adalah alat yang digunakan untuk menghitung berat badan ideal seseorang berdasarkan tinggi dan berat badan. Kalkulator BMI dapat digunakan secara online dan kapan saja.
+            <br>
             <br>
             BMI merupakan indikator yang digunakan untuk menentukan kategori berat badan, yaitu kurus, ideal, berlebihan, atau obesitas. BMI dihitung dengan membagi berat badan dalam kilogram dengan tinggi badan dalam meter persegi. </p>
-        <p>Berikut adalah kategori berat badan berdasarkan hasil BMI:</p>
-        <ul>
-            <li>Di bawah 18,5 = Berat badan kurang proporsional</li>
-            <li>Di antara 18,5 – 22,9 = Berat badan ideal</li>
-            <li>Di antara 23 – 29,9 = Berat badan berlebih (berpotensi obesitas)</li>
-            <li>Di atas 30 = Obesitas</li>
-        </ul>
-    </div>
-    <div class="container"> <!--form-->
-        <div class="input-section">
-            <h3>Kalkulator BMI</h3>
-            <label for="gender">Jenis Kelamin:</label>
-            <select id="gender">
-                <option value="laki-laki">Laki-laki</option>
-                <option value="perempuan">Perempuan</option>
-            </select>
-            <label for="weight">Berat (kg):</label>
-            <input type="number" id="weight" placeholder="Masukkan berat Anda" required>
-            <label for="height">Tinggi (cm):</label>
-            <input type="number" id="height" placeholder="Masukkan tinggi Anda dalam cm" required>
-            <button id="calculateBtn">Hitung BMI</button>
+            <p>Berikut adalah kategori berat badan berdasarkan hasil BMI:</p>
+            <ul>
+                <li>Di bawah 18,5 = Berat badan kurang proporsional</li>
+                <li>Di antara 18,5 – 22,9 = Berat badan ideal</li>
+                <li>Di antara 23 – 29,9 = Berat badan berlebih (berpotensi obesitas)</li>
+                <li>Di atas 30 = Obesitas</li>
+            </ul>
         </div>
-        <div class="result-section" style="display: none;"> <!--hasil tapi tersembunyi dahulu, dimunculkan pakai js-->
-            <h2>Hasil BMI</h2>
-            <p id="bmiResult">BMI Anda: -</p>
-            <p id="bmiCategory">Kategori: -</p>
+        <div class="container"> <!--form-->
+            <div class="input-section">
+                <h3>Kalkulator BMI</h3>
+                <label for="gender">Jenis Kelamin:</label>
+                <select id="gender">
+                    <option value="laki-laki">Laki-laki</option>
+                    <option value="perempuan">Perempuan</option>
+                </select>
+              <label for="weight">Berat (kg):</label>
+                <input type="number" id="weight" placeholder="Masukkan berat Anda" required>
+                <label for="height">Tinggi (cm):</label>
+                <input type="number" id="height" placeholder="Masukkan tinggi Anda dalam cm" required>
+                <button id="calculateBtn">Hitung BMI</button>
+            </div>
+            <div class="result-section" style="display: none;"> <!--hasil tapi tersembunyi dahulu, dimunculkan pakai js-->
+             <h2>Hasil BMI</h2>
+             <p id="bmiResult">BMI Anda: -</p>
+             <p id="bmiCategory">Kategori: -</p>
+            </div>
         </div>
-    </div>
-    <div class="artikel"> <!--penjelasan lanjutan-->
-        <p>Meskipun BMI dapat memberikan informasi dasar mengenai masalah berat badan, namun BMI bukanlah pengukuran yang akurat. Hal ini karena BMI tidak memperhitungkan lemak dalam tubuh atau apakah berat badan yang dihasilkan berasal dari otot atau lemak.</p>
-        <p>Jika Anda khawatir dengan kondisi tubuh Anda, lakukan konsultasi dengan dokter.</p>
-    </div>
-    <div class="footer"><!--watermark-->
-        Kalkuator BMI  by Zaky Zafatah Alzuhair
-    </div>
+        <div class="artikel"> <!--penjelasan lanjutan-->
+            <p>Meskipun BMI dapat memberikan informasi dasar mengenai masalah berat badan, namun BMI bukanlah pengukuran yang akurat. Hal ini karena BMI tidak memperhitungkan lemak dalam tubuh atau apakah berat badan yang dihasilkan berasal dari otot atau lemak.</p>
+            <p>Jika Anda khawatir dengan kondisi tubuh Anda, lakukan konsultasi dengan dokter.</p>
+        </div>
+     </div>
+        <div class="footer"><!--watermark-->
+            Kalkuator BMI  by Zaky Zafatah Alzuhair
+        </div>
     <script src="/JS/index.js"></script>
 </body>
 </html>
